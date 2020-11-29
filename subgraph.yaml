@@ -25,7 +25,7 @@ dataSources:
         - name: WBTC
           file: ./abis/WBTC.json
       eventHandlers:
-        -  event: BurnConfirmed(uint indexed,address indexed,uint,string,string,uint,bytes32)
+        - event: BurnConfirmed(uint indexed,address indexed,uint,string,string,uint,bytes32)
           handler: handleBurn
         - event: MintConfirmed(uint indexed,address indexed,uint,string,string,uint,bytes32)
           handler: handleMint
