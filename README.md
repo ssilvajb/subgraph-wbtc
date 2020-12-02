@@ -29,9 +29,11 @@ eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
 
-Running Locally
+##Running Locally
 
 Make sure to update package.json settings to point to your own graph account.
+
+##Deployed Version
 
 A deployed version of the WBTC subgraph can be found in https://thegraph.com/explorer/subgraph/ssilvajb/wrapped-btc
 
