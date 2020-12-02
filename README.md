@@ -8,32 +8,34 @@ Completely transparent. 100% verifiable. Community led.
 
 The Wrapped BTC subgraph aims to index WBTC token transactions in Ethereum mainnet. It tracks data of all Merchant, Custodians and Users transactions.
 
-Types of data:
-        - data on Total Supply
-        - data on transactions (mint, burn and transfers)
-        - data on holders
+## Types of Data
 
-entities:
-        - User
-        - Minter
-        - UserCounter
-        - MinterCounter
-        - TransferCounter
-        - TotalSupply
+- data on Total Supply
+- data on transactions (mint, burn and transfers)
+- data on holders
 
-eventHandlers:
-        - event: Burn(indexed address,uint256)
-          handler: handleBurn
-        - event: Mint(indexed address,uint256)
-          handler: handleMint
-        - event: Transfer(indexed address,indexed address,uint256)
-          handler: handleTransfer
+## Entities:
 
-##Running Locally
+- User
+- Minter
+- UserCounter
+- MinterCounter
+- TransferCounter
+- TotalSupply
+
+## EventHandlers
+- event: Burn(indexed address,uint256)
+  handler: handleBurn
+- event: Mint(indexed address,uint256)
+  handler: handleMint
+- event: Transfer(indexed address,indexed address,uint256)
+  handler: handleTransfer
+
+## Running Locally
 
 Make sure to update package.json settings to point to your own graph account.
 
-##Deployed Version
+## Deployed Version
 
 A deployed version of the WBTC subgraph can be found in https://thegraph.com/explorer/subgraph/ssilvajb/wrapped-btc
 
