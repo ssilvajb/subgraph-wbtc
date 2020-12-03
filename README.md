@@ -16,12 +16,12 @@ The Wrapped BTC subgraph aims to index WBTC token transactions in Ethereum mainn
 
 ## Entities:
 
-- User
-- Minter
-- UserCounter
-- MinterCounter
-- TransferCounter
-- TotalSupply
+- User : data on users and their balances
+- Minter: data on Merchants and related minted and burnt tokens
+- UserCounter: data on users per day
+- MinterCounter: data on number of Minters
+- TransferCounter: data on number of transfers per day
+- TotalSupply: data on total supply
 
 ## EventHandlers
 - event: Burn(indexed address,uint256)
