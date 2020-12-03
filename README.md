@@ -25,11 +25,11 @@ The Wrapped BTC subgraph aims to index WBTC token transactions in Ethereum mainn
 
 ## EventHandlers
 - event: Burn(indexed address,uint256)
-  handler: handleBurn
+  - handler: handleBurn
 - event: Mint(indexed address,uint256)
-  handler: handleMint
+  - handler: handleMint
 - event: Transfer(indexed address,indexed address,uint256)
-  handler: handleTransfer
+  - handler: handleTransfer
 
 ## Running Locally
 
